@@ -1,0 +1,95 @@
+/*Initialize*/
+body,html{margin-right:auto;
+	margin-left:auto;
+}
+ul#menu, ul#menu ul.sub-menu {
+    
+	background: #00AABB;
+	margin-bottom:auto;
+	margin-right:auto;
+	margin-left:auto;
+	
+	
+}
+
+ul#menu li {
+    margin:0px;
+	
+	list-style: none;
+	line-height: normal;
+	text-align: center;
+	display:inline-block;
+	
+}
+ul#menu ul.sub-menu li{
+	display:block;
+	
+	
+	
+}
+/*Link Appearance*/
+ul#menu li a {
+    
+	display: block;
+	letter-spacing: 1px;
+	padding: 22px 40px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.80em;
+	font-weight: 600;
+	border: none;
+	color: #FFF;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.80em;
+	font-weight: 600;
+	border: none;
+	color: #FFF;
+	
+}
+
+ul#menu li ul.sub-menu li a{
+	display: block;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.80em;
+	font-weight: 600;
+	
+	color: #FFF;
+	margin:auto;
+	width:100px;
+	
+	margin-left:-40px;
+	text-align:center;
+}
+/*Make the parent of sub-menu relative*/
+ul#menu li {
+    position: relative;
+	
+}
+/*sub menu*/
+ul#menu li ul.sub-menu {
+    display:none;
+    position: absolute;
+    top: 58px;
+	
+	
+	background:#00AABB;
+   
+    
+}
+ul#menu li:hover ul.sub-menu {
+    display:block;
+	
+	
+}
+
+ul#menu a:hover, .current_page_item a{
+	text-decoration: none;
+	color:black !important;
+	background: #008C9A;
+	
+}

@@ -1,0 +1,188 @@
+/* @override http://www.morningcopy.com.au/tutorial/redux/style.css */
+
+/* @override http://www.morningcopy.com.au/tutorial/redux/style.css */
+
+#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	width: 323px;
+}
+#GoogleForm {
+}
+p {
+	float: left;
+}
+p.last-thing {
+	
+	clear: left;
+	float: left;
+	color: #777;
+	margin-top: 10px;
+	padding-top: 10px;
+	width: 216px;
+	border-top: 1px solid #e1e1e1;
+}
+body {
+	font: 16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+			#fieldWrapper {
+				height : 220px;
+			}
+
+			#navigation {
+				margin-top : 0.5em;
+				text-align: right;
+	float: left;
+	clear: left;
+}
+			
+			#data {
+				font-size : 0.7em;
+			}
+
+			input {
+				margin-right: 0.1em;
+				margin-bottom: 0.5em;
+	padding: 5px;
+	font-size: 14px;
+	border: 1px solid #d6d6d6;
+	color: #9b9b9b;
+	margin-top: 0;
+}
+.required, .email required {
+	float: left;
+	margin-top: 0;
+}
+
+
+	label {
+	margin-left: 2px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	float: left;
+}
+label.ss-choice-label {
+	width: 83px;
+	margin-top: 0;
+	display: inline;
+}
+
+			label.error {
+				color: #e15b77;
+				font-size: 14px;
+	float: left;
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 230px;
+}
+
+			.step span {
+				font-weight: bold;
+	background-color: #faf982;
+	border: 1px solid #c4c465;
+	font-size: 18px;
+	display: inline;
+	padding: 5px;
+	margin: 0 149px 10px 0;
+	float: left;
+	clear: left;
+}
+
+	.navigation_button {
+	width : 70px;
+	color: black;
+	border: 1px solid #b7b8b8;
+	cursor: pointer;
+	background-color: #ddd;
+	margin-left: 3px;
+	float: left;
+}
+
+	.navigation_button:hover {
+	width : 70px;
+	color: #404040;
+	border: 1px solid #a7a9a9;
+	cursor: pointer;
+	background-color: #e3e4e4;
+}
+
+	.submit_button {
+	width : 70px;
+	color: black;
+	border: 1px solid #b7b8b8;
+	cursor: pointer;
+	background-color: #ddd;
+	margin-left: 3px;
+	float: left;
+	clear: left;
+}
+
+	.submit_button:hover {
+	width : 70px;
+	color: #404040;
+	border: 1px solid #a7a9a9;
+	cursor: pointer;
+	background-color: #e3e4e4;
+}
+
+			
+
+			
+h1 {
+	color: #777;
+	font: 20px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	margin-top: 0;
+	margin-bottom: 10px;
+	width: 216px;
+	float: left;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e1e1e1;
+	clear: left;
+}
+	h2 {
+	color: #c1732c;
+	font: 30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	margin-top: 0;
+	margin-bottom: 10px;
+
+}
+	h3 {
+	color: #777;
+	font: 20px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	margin-top: 0;
+	margin-bottom: 0px;
+}
+
+a {
+	color: #7492b5;
+	text-decoration: none;
+}
+a:hover {
+	color: #e48935;
+	text-decoration: underline;
+}
+
+li {
+	list-style-type: none;
+	display: inline;
+	float: left;
+	clear: left;
+}
+li input {
+	border: 0 none #fff;
+	margin: 3px 5px 0 0;
+	padding: 0;
+	width: 17px;
+	float: left;
+	display: inline;
+}
+ul {
+	padding-left: 0;
+	margin-left: 0;
+	float: left;
+	clear: left;
+	margin-top: 3px;
+}
+

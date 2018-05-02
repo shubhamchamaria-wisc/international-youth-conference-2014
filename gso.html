@@ -1,0 +1,402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script>
+(function(a){(jQuery.browser=jQuery.browser||{}).mobile=/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))})(navigator.userAgent||navigator.vendor||window.opera);
+
+if(jQuery.browser.mobile == true)
+{
+	window.location="IYCM/gso.html";
+}
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+$(window).bind('scroll', function() {
+  if ($(window).scrollTop() > 87) {
+  $("#menu").css({ 'position': 'fixed', 'top':0,'width':'100%'});
+ 	 
+ 	 
+  }
+  else {
+  $("#menu").css({ 'position' : '', 'width': '100%', 'height':'55px' }); 
+ 	 
+  }
+ 	 
+ 	 
+  });
+});
+</script>
+
+<style>
+
+a img {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+	cursor:default;
+}
+a span {
+    display: inline-block;
+	cursor:default;
+}
+
+#questions{
+	height:100%;
+	font-weight:900;
+	text-align:justify;
+	vertical-align:middle;
+	overflow:auto;
+	width:50%;
+	float:left;
+	
+	margin-left:8%;
+	
+}
+
+
+input[type=text]{
+	height:30px;
+	width:340px;
+	font-size:16px;
+	
+	
+}
+
+input[type=email]{
+	height:30px;
+	width:340px;
+	
+	font-size:16px;
+	
+	
+	
+}
+
+textarea{
+	resize:none;
+	
+	font-size:16px;
+	margin-left:-5px;
+	padding-left:5px;
+}
+
+
+#map{
+	
+	float:right;
+	display:inline;
+	max-height:312px;
+	max-width:400px;
+	
+	margin-right:8%;
+	
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+a img {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+	cursor:default;
+}
+a span {
+    display: inline-block;
+	cursor:default;
+}
+
+
+#halfbar1{
+	float:left;
+	width:48%;
+}
+
+#halfbar2{
+	float:right;
+	width:48%;
+}
+
+.tabbed-view{
+	height:800px !important;
+}
+</style>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>IYC 2014 | GSO</title>
+<meta name="keywords" content="" />
+
+<meta name="description" content="" />
+<link  rel="stylesheet" type="text/css" href="themes/default/default.css" />
+<link  rel="stylesheet" type="text/css" href="tabs.css" />
+<link href="http://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+<div id="wrapper">
+	<div id="header-wrapper">
+		<div id="header">
+			<div id="logo">
+				<img src="images/iyclogo.png" height="83" width="126" style="float:left;vertical-align:middle;padding-right:10px;" />
+
+				<h1 style="float:left;"><a href="#">INTERNATIONAL YOUTH CONFERENCE 2014</a></h1>
+				<img src="images/jnslogo.png" height="83" width="92" style="float:left;padding-top:-1px;vertical-align:middle;padding-left:10px;" />
+			</div>
+			<div id="banner"> <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a> </div>
+		</div>
+	</div>
+	<div id="menu-wrapper2">
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="committees.html">Committees</a></li>
+				<li><a href="register.html">Register</a></li>
+				<li><a href="recommend.html">Recommend</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+                
+			</ul>
+		</div>
+        </div>
+		<!-- end #menu --> 
+	
+<div id="page" class="container">
+		<div id="content">
+			<div class="title2">
+				<h2>THE GLOBAL SECURITY COUNCIL</h2>
+                </div>
+                <div class="tabbed-view">
+
+<!--tabbed 01 Starts here-->
+		<form>
+
+        <div class="tab-container white top">
+		
+        
+        	<label class="tab-label">
+				<input class="tab-radio" type="radio" name="page" value="page5" checked="checked" />
+				<h2 class="tab">Chairperson's Address</h2>
+				<article class="tab-page" id="page6">
+					<h3>Chairperson's Address</h3>
+					<h4><img src="images/kapila.png" height="60" width="60" style="border-radius:50%;vertical-align:middle;" /><span style="display:inline-block;">&nbsp;&nbsp;Tamanna Kapila</span></h4>
+                    <p>
+                    <p>To the inveterate and potential delegates of the International Youth Conference 2014:
+Fear, my friends, is dangerous. </p><p>
+It can make you crumble, it can make you weak. It can sap your energy and plague your spirit. And if after this anguish, you still continue to have just a little bit of yourself still with you, fear can be worse.</p><p>
+The same fear makes you just a little bit stronger. It brings about the knowledge that courage is not the absence of it. It makes you realize that since you have everything to lose, you really have nothing to lose at all. </p>
+Fear is still a dangerous thing.<br />
+But this time round, not to you. <br /><br />
+Ladies and gentlemen, welcome to the Global Security Organization.<br /> <br />
+<p>
+Here, we don't pretend to be fearless. We don't pretend to know every answer. What we do, is take a group of a norm-defying human beings, not merely representatives, and tackle any seeming threat to human security head first. We plan, we strategize. We laugh and we smirk, we get scared, and then we dump the fear and look at it condescendingly. Diplomacy is merely an assumed stance here, we expect you to claw, threaten and fight, all whilst maintaining your dignity. You are no longer a highschooler, you have in fact been transported into a world of war, guns, death, crises, dread and most of all, power. 
+So ladies, get into those heels while the men adorn their customized suits because in the GSO, we give you the power to change the way the world works. The power to bring about peace, the power to create havoc. </p>
+<p>Choose wisely.</p>
+Chairperson of the Global Security Organization,<br />
+Tamanna Kapila.
+
+                    </p>
+				</article>
+			
+            </label>
+
+            <label class="tab-label">
+				<input class="tab-radio" type="radio" name="page" value="page8" />
+				<h2 class="tab">About GSO</h2>
+				<article class="tab-page" id="page8">
+                	<h3>About GSO</h3>
+					<p>The Global Security Organization is not for everyone. </p><p>
+Today, we have an illusion of security but not the real deal itself. This is why the GSO exists, attempting to change this phenomenon all across the world. .The GSO might be a fictional committee but the challenges it faces sure aren't. We tackle humanitarian causes, which lead to a breach of rights through violence and warfare; we deploy armies and restrain them; we pass orders in the moment within minutes and we draft working papers and resolutions that may potentially affect the world with no restraints or warning. </p><p>
+You shall not just be debating past issues, but also real time problems as one crisis after the other comes into play. This committee never stands still! 
+It can't. </p><p>
+Remember: The GSO requires you to be both, responsible and a visionary. It is not as easy as it sounds, but it sure is worth the challenge.</p><p>  
+First timer or not, we have no qualms about your experience, for the executive board you are all the same- superheroes of the real world, here to fight a common battle. 
+</p>
+				</article>
+			
+            </label>
+
+
+           <label class="tab-label">
+				<input class="tab-radio" type="radio" name="page" value="page6" />
+				<h2 class="tab">About the EB</h2>
+				<article class="tab-page" id="page6">
+					<h3>About the EB</h3>
+                  <div id="halfbar1">
+                    <div style="border-bottom:1px solid black;margin-top:10px;">
+        <span>
+       Chairperson<br /><span style="color:#00AABB;font-size:1.4em;">Tamanna Kapila</span><br />
+    </span><br />	
+    		
+	<img src="images/kapila.png" style="width:80px;height:80px;padding-right:5px;" align="left" />
+    <span>Her unadulterated sarcasm will leave you red faced; her smile will leave you weak, and her intellect - frightened! Armed with a sharp tongue, a no nonsense attitude, yet a kind heart, the chair of GSO won't hesitate before pulling you down or pushing you up. Her experience as a chair and a very thorough MUNner, we can assure you one thing from Tamanna - Put your seatbelts on real tight delegates, and be prepared for one crazy rollercoaster ride. 
+</span>
+<br /><br />
+</span>
+</div>
+<div style="border-bottom:1px solid black;margin-top:10px;">
+        <span>
+       Rapporteur<br /><span style="color:#00AABB;font-size:1.4em;">Rahul Loney</span><br />
+    </span><br />	
+    		
+	<img src="images/rahul.png" style="width:80px;height:80px;padding-right:5px;" align="left" />
+    <span>The right mix of leadership, athleticism, looks and the constant intelligent comments, your rapporteur will ensure complete decorum in committee. A die hard Arsenal fan and keen observer, your GSO rapporteur will not let you down.
+</span>
+<br /><br /><br />
+</span>
+</div>
+<div style="margin-top:10px;">
+        <span>
+       R&D Head<br /><span style="color:#00AABB;font-size:1.4em;">Anisha Godhwani</span><br />
+    </span><br />	
+    		
+	<img src="images/anisha.png" style="width:80px;height:80px;padding-right:5px;" align="left" />
+    <span>Although her calm demeanour and sweet voice may make you think otherwise, GSO's R&D in charge will not tolerate any nonsense. This well-versed and hardworking individual will not hesitate to question your facts! 
+</span>
+<br /><br />
+</span>
+</div>
+                    </div>
+                    <div id="halfbar2">
+                    <div style="border-bottom:1px solid black;margin-top:10px;">
+        <span>
+       Vice-Chairperson<br /><span style="color:#00AABB;font-size:1.4em;">Shashank Ravishankar</span><br />
+    </span><br />	
+    		
+	<img src="images/shashank.png" style="width:80px;height:80px;padding-right:5px;" align="left" />
+    <span>An avid MUNner, debater, and geek. That's Shashank Ravishankar, your friendly neighbourhood Vice-Chair! Extremely welcoming, and always open to questions, Shashank is ever approachable and wishes all the delegates the best of luck. However be careful with your facts because he will not shy away from an argument he knows he can win.
+</span>
+<br /><br /><br />
+</span>
+</div>
+<div style="border-bottom:1px solid black;margin-top:10px;">
+        <span>
+       Moderator<br /><span style="color:#00AABB;font-size:1.4em;">Aditya Kamat</span><br />
+    </span><br />	
+    		
+	<img src="images/kamat.png" style="width:80px;height:80px;padding-right:5px;" align="left" />
+    <span>A fun-loving and generally jovial guy whose unique sense of humour can rip your self-esteem apart. Can't handle mockery? Think twice before applying to GSO; the moderator will not hesitate to ruthlessly tear you apart!
+</span>
+<br /><br /><br />
+</span>
+</div>
+                    </div>	
+   					
+				</article>
+			
+            </label>
+
+
+           <label class="tab-label">
+				<input class="tab-radio" type="radio" name="page" value="page7" />
+				<h2 class="tab">Agendas</h2>
+				<article class="tab-page" id="page7">
+					<h3>Agendas</h3>
+					<p><h4>1. Organized Crime</h4></p>
+                    
+                   
+                    <p>Never before has delinquency been this exhilarating, or this sophisticated. Organized crime is here to stay, here to be a permanent part of every life.</p><p>
+ It's rampant! Rather than trying to combat it, we seem to have just accepted it as a huge, dark spot on the pages of humanity. But isn't it, really? Governments sponsor terrorists, terrorists sponsor governments, and the mafias continue to thrive everywhere. Racketeers are citizens in suits and gold chains, and the average government servant the scum on the pond. It's a weird world, and we are only aiding it. </p><p>
+Multinational crime families exists everywhere. A pirated DVD sold in Mumbai, and the money probably goes straight into the pocket of a crime lord sitting in Karachi. Drugs produced in Afghanistan may end up in the hands of a teenager in Russia, and the money may end up in some other corner of the world. Terrorist cells profit from organised crime, while oil mafias don't even need to be mentioned here, so well-known is their existence. Are you going to eliminate them, are you going to negotiate? Are you going to be violent, or are you going to continue being the smooth talking representatives that you are? How are you going to find them? Aren't members of the GSO indirectly sustaining them?</p><p>
+Choose your stance, side with who you think is the greater force. Debate, argue and negotiate. It is now or never, delegates. Step up, and slay this beast. We, the GSO executive board, have given you an agenda you can't refuse. 
+
+                    </p>
+                    
+                    <p><h4>2. Biological Warfare</h4></p><p> 
+                    War scares everyone. The bravest soldier will not admit it; the most ignorant civilian will appear
+
+oblivious to it. Yet, here we stand, talking about invasions and battles like we were personally part of 
+
+them, ignoring what is obviously an integral part of this legal massacre. It's a whole new world it in itself, 
+
+where science is no longer a friend, foes turn friendly and allies turn their back.
+
+Welcome delegates, to biological warfare.
+
+It's almost like a sci-fi movie come alive, words simply aren't enough to portray or dangerous, yet 
+
+exciting this world it. Can you imagine the use of biological toxins or infectious agents such as bacteria, 
+
+viruses, and fungi with intent to kill or incapacitate humans, animals and plants? Biological weapons 
+
+are living organisms or replicating entities that reproduce or replicate within their host victims. 
+
+Entomological (insect) warfare is also considered a type of biological weapon. Everything that lives is 
+
+their toy and your enemy. 
+
+Like it or not, biological warfare is an increasing threat in our world. Every man, woman and child is at its 
+
+mercy, yet so few are afraid of it, and almost nothing has been done to protect the common man from 
+
+it. Are we not aware of it? Or are we, as a race in itself, simply ignorant, ceasing to look until an infection 
+
+drains your strength, what you thought to be invincible? 
+
+It has been a danger to us ever since the Assyrians poisoned the wells of their enemies with a 
+
+fungus that would render the enemy delirious back in the 6th
+
+science, our lives are at greater risk than ever. Governments have claimed to recognize this threat. 
+
+Treaties have been signed. Pacts have been made. Yet, as always, these pacts and treaties have been 
+
+ignored. 
+
+ century BC and now, because to modern 
+
+Delegates, it is now up to you to decide whether you want to live under the illusion of safety and risk 
+
+compromising the lives of every living being on this planet, or step up, and take some concrete action 
+
+against this dire threat
+
+What are you, Captain America, Bruce Wayne or Stark?
+
+Still thinking, lurking in the shadows or ready to take it on?
+                    </p>
+<br />
+				</article>
+			
+            </label>
+
+		</div>
+
+</form>
+
+
+
+
+</div>
+
+
+</div>
+</div>
+<div id="footer-wrapper">
+	<div id="footer">
+		
+		<div id="box3">
+			<div class="title">
+            
+				<h2>SOCIAL LINKS</h2>
+			</div>
+			
+			<ul class="contact">
+				<li><a href="http://instagram.com/iyc_2014" target="_newtab" style="cursor:pointer;"><img src="images/insta.png" height="40" width="40" style="max-height:40px;minheight:40px;max-width:40px;min-width:40px;cursor:pointer;" /></a></li>
+				<li><a href="https://www.facebook.com/pages/International-Youth-Conference-2014/556534584451719" target="_newtab" style="cursor:pointer;"><img src="images/facebook.png" height="40" width="40" style="border-radius:50%;max-height:40px;minheight:40px;max-width:40px;min-width:40px;cursor:pointer;" /></a></li>
+
+				
+			</ul>
+				</div>
+		</div>
+	</div>
+</div>
+<div id="copyright" class="container">
+	<p>&copy; Jamnabai Narsee School 2014. Made by Shubham Chamaria.</p>
+</div>
+</body>
+</html>
